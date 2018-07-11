@@ -32,15 +32,18 @@ def move(board, index, token = "X")
 end
 
 def turn(board)
-  index = 100
+  puts "Please enter 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
 
   while !valid_move?(board, index) do
+    if !valid_move(board,index)
+      puts "Try Again!"
+    end
     puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index(input)
-    if !valid_move?(board,index)
-      puts "Try Again!"
-    end
+    
   end
   move(board, index, "X")
 
