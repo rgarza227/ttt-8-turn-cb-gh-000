@@ -33,7 +33,7 @@ end
 
 def turn(board)
   input = 0
-  
+
   while !input.between?(1,9) do
     puts "Please enter 1-9:"
     input = gets.strip
@@ -42,7 +42,7 @@ def turn(board)
       puts "Invalid Entry. Try Again."
     end
   end
-  
+
   position_taken?(board, index)
   move(board, index, "X")
   display_board(board)
