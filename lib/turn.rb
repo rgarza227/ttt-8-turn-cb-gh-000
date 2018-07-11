@@ -40,4 +40,5 @@ def turn(board)
       puts "Invalid Entry. Try Again."
     end
   end
+  index = input - 1
 end
