@@ -38,5 +38,6 @@ def turn(board)
     input = gets.strip.to_i
     if !input.between?(1,9)
       puts "Invalid Entry. Try Again."
+    end
   end
 end
