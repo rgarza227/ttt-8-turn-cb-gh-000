@@ -33,14 +33,14 @@ end
 
 def turn(board)
 
-  
+
   puts "Please enter 1-9:"
   input = gets.strip()
   index = input_to_index(input)
   if !index.between?(0,8)
     puts "Invalid Entry. Try Again."
   end
-  
+
 
   position_taken?(board, index)
   move(board, index, "X")
