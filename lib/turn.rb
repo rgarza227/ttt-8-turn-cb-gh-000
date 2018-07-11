@@ -36,5 +36,7 @@ def turn(board)
   while !input.between?(1,9) do
     puts "Please enter 1-9:"
     input = gets.strip.to_i
+    if !input.between?(1,9)
+      puts "Invalid Entry. Try Again."
   end
 end
