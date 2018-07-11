@@ -32,10 +32,9 @@ def move(board, index, token = "X")
 end
 
 def turn(board)
-  input = 0
-  while !input.between?(1,9) do
-    puts "Please enter 1-9:"
-    input = gets.strip.to_i
+
+  puts "Please enter 1-9:"
+    input = input_to_index(gets.strip)
     if !input.between?(1,9)
       puts "Invalid Entry. Try Again."
     end
@@ -47,5 +46,6 @@ def turn(board)
 end
 
 def input_to_index (input)
-  index = input - 1
+  index = input.to_i - 1
+  
 end
