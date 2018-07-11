@@ -40,6 +40,7 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index, "X")
     display_board(board)
+  end
 end
 
 def input_to_index (input)
