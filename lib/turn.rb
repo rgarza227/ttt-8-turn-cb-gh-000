@@ -40,8 +40,12 @@ def turn(board)
       puts "Invalid Entry. Try Again."
     end
   end
-  index = input - 1
+  index = input_to_index(input)
   position_taken?(board, index)
   move(board, index, "X")
   display_board(board)
+end
+
+def input_to_index (input)
+  index = input - 1
 end
