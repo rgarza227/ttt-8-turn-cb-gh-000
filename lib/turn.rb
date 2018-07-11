@@ -43,5 +43,5 @@ def turn(board)
   index = input - 1
   position_taken?(board, index)
   move(board, index, "X")
-  display_board(board,index)
+  display_board(board)
 end
